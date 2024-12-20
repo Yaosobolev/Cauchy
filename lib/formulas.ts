@@ -125,7 +125,7 @@ export const checkConvergence = (
 
     if (index < t.length - 1) {
       for (let i = 0; i < u1[index].length - 1; i++) {
-        const diff = Math.abs(u1[index][i] - u1[index + 1][i]);
+        const diff = Math.abs(u1[index][i] - u1[index + 1][i * 2]);
         differences.push(diff);
         if (diff > maxDifference) {
           maxDifference = diff;
